@@ -1,6 +1,6 @@
 # Calisthenics-Movements
 
-## 🔧<h3>Developing</h3>
+<h3>🔧Developing</h3>
 
 It is a web application planned by me, where I perform the CRUD of Calisthenics Movements.
 
