@@ -4,7 +4,7 @@
 
 It is a web application planned by me, where I perform the CRUD of Calisthenics Movements.
 
-<h5>Some fields in main Model is:</h5>
+<h3>Some fields in main Model is:</h3>
 
 + name.
 + description.
@@ -12,7 +12,7 @@ It is a web application planned by me, where I perform the CRUD of Calisthenics 
 + sequency num.
 + dificult category.
 
-<h5>In addition to CRUD, I implement other features such as:</h5>
+<h3>In addition to CRUD, I implement other features such as:</h3>
 
 + search for movements by name and/or dificult category.
 + analyze details of an isolation movement.
