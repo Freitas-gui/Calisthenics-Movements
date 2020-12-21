@@ -8,5 +8,5 @@ class Calisthenic extends Model
 {
     protected $table = 'calisthenics';
     public $timestamps = false;
-    #protected $fillable = ['name'];
+    protected $fillable = ['name','description', 'repetation', 'sequency', 'difficulty'];
 }

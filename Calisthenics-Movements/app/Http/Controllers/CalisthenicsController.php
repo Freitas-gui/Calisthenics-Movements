@@ -2,10 +2,26 @@
 
 namespace App\Http\Controllers;
 
+use App\Calisthenic;
+use App\Service\CreateOfCalisthenics;
 use Illuminate\Http\Request;
+use Illuminate\Routing\Route;
 
 class CalisthenicsController extends Controller
 {
+
+
+    private function createCookie(Calisthenic $calisthenics)
+    {
+        setcookie('LastMovement', $calisthenics, time()+3600);
+    }
+
+    public function LastMovement()
+    {
+        return view('calisthenics.LastMovement');
+    }
+
+
     /**
      * Display a listing of the resource.
      *
@@ -13,7 +29,17 @@ class CalisthenicsController extends Controller
      */
     public function index()
     {
-        return view('calisthenics.index');
+        $calisthenics = Calisthenic::all();
+        $calisthenic = array();
+
+        $index = 0;
+        foreach($calisthenics as $element){
+            $calisthenic[$index] = $element;
+            $index++;
+        }
+
+
+        return view('calisthenics.index',compact('calisthenics','calisthenic'));
     }
 
     /**
@@ -23,7 +49,7 @@ class CalisthenicsController extends Controller
      */
     public function create()
     {
-        //
+        return view('calisthenics.create');
     }
 
     /**
@@ -32,9 +58,12 @@ class CalisthenicsController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request, CreateOfCalisthenics $createOfCalisthenics)
     {
-        //
+        $calisthenics = $createOfCalisthenics->createCalisthenics($request->name, $request->description, $request->repetation, $request->sequency, $request->difficulty);
+        $this->createCookie($calisthenics);
+
+        return redirect()->route('index');
     }
 
     /**

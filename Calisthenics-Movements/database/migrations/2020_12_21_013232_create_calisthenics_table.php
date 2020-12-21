@@ -20,7 +20,6 @@ class CreateCalisthenicsTable extends Migration
             $table->integer('repetation');
             $table->integer('sequency');
             $table->enum('difficulty', ['easy', 'medium', 'hard']);
-
         });
     }
 
@@ -34,3 +33,4 @@ class CreateCalisthenicsTable extends Migration
         Schema::dropIfExists('calisthenics');
     }
 }
+

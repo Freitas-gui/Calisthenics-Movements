@@ -2,14 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06010448-2aee-4fa3-80d9-e38d32a22ba3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Calisthenics-Movements/resources/views/calisthenics/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Calisthenics-Movements/app/Service/CreateOfCalisthenics.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Calisthenics-Movements/resources/views/calisthenics/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Calisthenics-Movements.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Calisthenics-Movements.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Calisthenics-Movements/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Calisthenics-Movements/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Calisthenics-Movements/app/Calisthenic.php" beforeDir="false" afterPath="$PROJECT_DIR$/Calisthenics-Movements/app/Calisthenic.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Calisthenics-Movements/app/Http/Controllers/CalisthenicsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Calisthenics-Movements/app/Http/Controllers/CalisthenicsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Calisthenics-Movements/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/Calisthenics-Movements/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Calisthenics-Movements/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Calisthenics-Movements/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Calisthenics-Movements/database/migrations/2020_12_15_203713_create_calisthenics_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Calisthenics-Movements/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Calisthenics-Movements/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Calisthenics-Movements/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/Calisthenics-Movements/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Calisthenics-Movements/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/Calisthenics-Movements/resources/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Calisthenics-Movements/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Calisthenics-Movements/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Calisthenics-Movements/resources/views/calisthenics/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Calisthenics-Movements/resources/views/calisthenics/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Calisthenics-Movements/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/Calisthenics-Movements/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Calisthenics-Movements/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/Calisthenics-Movements/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/Calisthenics-Movements/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -120,6 +137,7 @@
       <path value="$PROJECT_DIR$/Calisthenics-Movements/vendor/doctrine/instantiator" />
       <path value="$PROJECT_DIR$/Calisthenics-Movements/vendor/symfony/polyfill-iconv" />
       <path value="$PROJECT_DIR$/Calisthenics-Movements/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/Calisthenics-Movements/vendor/laravel/ui" />
     </include_path>
   </component>
   <component name="ProjectId" id="1lhvW885D1uRr1xBSrvQFyrW3uN" />
@@ -133,9 +151,16 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Alura-courses/series_controller" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Freit\Desktop\Calisthenics-Movements\Calisthenics-Movements\app" />
+      <recent name="C:\Users\Freit\Desktop\Calisthenics-Movements\Calisthenics-Movements\public\imgs" />
+      <recent name="C:\Users\Freit\Desktop\Calisthenics-Movements\Calisthenics-Movements\public" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -146,6 +171,8 @@
       <option name="presentableId" value="Default" />
       <updated>1608062165676</updated>
       <workItem from="1608062169267" duration="3926000" />
+      <workItem from="1608234071186" duration="31408000" />
+      <workItem from="1608514105625" duration="257000" />
     </task>
     <servers />
   </component>
@@ -162,5 +189,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

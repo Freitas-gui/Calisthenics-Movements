@@ -97,6 +97,7 @@
       <path value="$PROJECT_DIR$/Calisthenics-Movements/vendor/doctrine/instantiator" />
       <path value="$PROJECT_DIR$/Calisthenics-Movements/vendor/symfony/polyfill-iconv" />
       <path value="$PROJECT_DIR$/Calisthenics-Movements/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/Calisthenics-Movements/vendor/laravel/ui" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.2" />

@@ -101,6 +101,7 @@
       <excludeFolder url="file://$MODULE_DIR$/Calisthenics-Movements/vendor/doctrine/instantiator" />
       <excludeFolder url="file://$MODULE_DIR$/Calisthenics-Movements/vendor/symfony/polyfill-iconv" />
       <excludeFolder url="file://$MODULE_DIR$/Calisthenics-Movements/vendor/doctrine/inflector" />
+      <excludeFolder url="file://$MODULE_DIR$/Calisthenics-Movements/vendor/laravel/ui" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
