@@ -23,6 +23,7 @@ class CreateCalisthenicsTable extends Migration
         });
     }
 
+
     /**
      * Reverse the migrations.
      *

@@ -37,8 +37,6 @@ class CalisthenicsController extends Controller
             $calisthenic[$index] = $element;
             $index++;
         }
-
-
         return view('calisthenics.index',compact('calisthenics','calisthenic'));
     }
 
@@ -60,7 +58,11 @@ class CalisthenicsController extends Controller
      */
     public function store(Request $request, CreateOfCalisthenics $createOfCalisthenics)
     {
-        $calisthenics = $createOfCalisthenics->createCalisthenics($request->name, $request->description, $request->repetation, $request->sequency, $request->difficulty);
+        $calisthenics = $createOfCalisthenics->createCalisthenics(
+            $request->name, $request->description,
+            $request->repetation, $request->sequency,
+            $request->difficulty, $request->muscle_group
+        );
         $this->createCookie($calisthenics);
 
         return redirect()->route('index');

@@ -17,6 +17,12 @@
         </div>
         <div class="row mt-4">
             <div class="col col-6 m-auto">
+                <label for="muscle_group">Muscle Group:</label>
+                <input type="text" class="form-control" name="muscle_group" id="muscle_group">
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col col-6 m-auto">
                 <label for="description">Description:</label>
                 <textarea class="form-control" name="description" id="description" rows="3"></textarea>
             </div>
