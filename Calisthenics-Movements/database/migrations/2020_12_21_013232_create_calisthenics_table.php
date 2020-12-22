@@ -20,6 +20,8 @@ class CreateCalisthenicsTable extends Migration
             $table->integer('repetation');
             $table->integer('sequency');
             $table->enum('difficulty', ['easy', 'medium', 'hard']);
+            //$table->string('difficulty');
+            //$table->index('difficulty');
         });
     }
 

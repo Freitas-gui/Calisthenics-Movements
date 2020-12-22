@@ -11,12 +11,14 @@
 |
 */
 
+Auth::routes();
+
 Route::get('/','CalisthenicsController@index')->name('index');
 Route::get('/create','CalisthenicsController@create')->name('create');
 Route::post('/create','CalisthenicsController@store')->name('store');
+Route::delete('/destroy/{calisthenic}','CalisthenicsController@destroy')->name('destroy');
+Route::put('/edit/{calisthenic}','CalisthenicsController@edit')->name('edit');
+Route::get('/update/{calisthenic}','CalisthenicsController@update')->name('update');
 
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/last', 'CalisthenicsController@LastMovement')->name('last');
