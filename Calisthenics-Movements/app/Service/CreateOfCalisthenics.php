@@ -7,7 +7,7 @@ use http\Env\Request;
 
 class CreateOfCalisthenics{
 
-    public function createCalisthenics(Request $request, string $name,string $description, int $repetation, int $sequency, string $difficulty, string $muscle_group)
+    public function createCalisthenics(string $name,string $description, int $repetation, int $sequency, string $difficulty, string $muscle_group)
     {
 
 

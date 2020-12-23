@@ -7,7 +7,6 @@ use Illuminate\Support\Facades\DB;
 
 class UpdateDifficultyCalisthenicsTable extends Migration
 {
-
     /**
      * Run the migrations.
      *
@@ -17,7 +16,7 @@ class UpdateDifficultyCalisthenicsTable extends Migration
     {
         Schema::getConnection()->getDoctrineSchemaManager()->getDatabasePlatform()->registerDoctrineTypeMapping('enum', 'string');
         Schema::table('calisthenics', function (Blueprint $table) {
-            $table->string('difficulty', 15)->change();
+            $table->string('difficulty')->change();
             $table->index('difficulty');
         });
     }
@@ -29,10 +28,10 @@ class UpdateDifficultyCalisthenicsTable extends Migration
      */
     public function down()
     {
-        Schema::getConnection()->getDoctrineSchemaManager()->getDatabasePlatform()->registerDoctrineTypeMapping('enum', 'enum');
+        Schema::getConnection()->getDoctrineSchemaManager()->getDatabasePlatform()->registerDoctrineTypeMapping('enum', 'string');
         Schema::table('calisthenics', function (Blueprint $table) {
-            $table->dropIndex('difficulty');
-            DB::statement("ALTER TABLE calisthenics MODIFY difficulty ENUM('easy', 'medium', 'hard','expert') DEFAULT ''");
+            $table->string('difficulty')->change();
+            $table->index('difficulty');
         });
     }
 

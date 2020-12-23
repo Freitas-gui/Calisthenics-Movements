@@ -84,7 +84,7 @@
                     <label class="form-check-label" for="easy">Easy</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="difficulty" id="mmmedium" value="mmmedium"
+                    <input class="form-check-input" type="radio" name="difficulty" id="medium" value="medium"
                         @if(isset($calisthenic) && ($calisthenic->difficulty == "medium"))
                             checked
                         @endif
