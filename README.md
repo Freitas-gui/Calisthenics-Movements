@@ -14,6 +14,6 @@ It is a web application planned by me, where I perform the CRUD of Calisthenics 
 
 <h3>In addition to CRUD, I implement other features such as:</h3>
 
-+ search for movements by name and/or dificult category.
-+ analyze details of an isolation movement.
++ search for movements by name and/or dificulted category.
++ analyze details of an isolated movement.
 + entire verification system to validate forms with personalized messages.
