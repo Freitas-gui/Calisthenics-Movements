@@ -11,6 +11,7 @@
 |
 */
 
+// WEB
 Auth::routes();
 
 Route::get('/','CalisthenicsController@index')->name('index');
@@ -20,5 +21,9 @@ Route::delete('/destroy/{calisthenic}','CalisthenicsController@destroy')->name('
 Route::put('/edit/{calisthenic}','CalisthenicsController@edit')->name('edit');
 Route::get('/update/{calisthenic}','CalisthenicsController@update')->name('update');
 
+// Cookie Test
+Route::get('/lastCreated', 'CalisthenicsController@lastCreated')->name('last.created');
 
-Route::get('/last', 'CalisthenicsController@LastMovement')->name('last');
+
+
+

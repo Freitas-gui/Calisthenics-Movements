@@ -76,7 +76,7 @@
         <div class="row mt-4">
             <div class="col col-6 m-auto d-flex justify-content-between">
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="difficulty" id="easy" value="easy"
+                    <input class="form-check-input" type="radio" name="difficulty" id="easyyy" value="easyyy"
                            @if(isset($calisthenic) && ($calisthenic->difficulty == "easy"))
                            checked
                         @endif

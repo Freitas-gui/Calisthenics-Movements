@@ -6,7 +6,7 @@
 @endsection
 
 @section('content')
-
+    {{$_COOKIE['LastMovement']}}
     @for($count=0, $breakLine=0; $count<$calisthenics->count(); $breakLine++)
     <div class="row">
         <div class="col col-sm-10 card-deck d-flex justify-content-between m-auto my-lg-4">

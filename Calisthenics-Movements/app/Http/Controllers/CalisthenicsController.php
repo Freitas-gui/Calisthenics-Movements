@@ -5,28 +5,20 @@ namespace App\Http\Controllers;
 use App\Calisthenic;
 use App\Service\CreateOfCalisthenics;
 use Illuminate\Http\Request;
-use Illuminate\Routing\Route;
 
 class CalisthenicsController extends Controller
 {
-
 
     private function createCookie(Calisthenic $calisthenics)
     {
         setcookie('LastMovement', $calisthenics, time()+3600);
     }
 
-    public function LastMovement()
+    public function lastCreated()
     {
-        return view('calisthenics.LastMovement');
+        return view('calisthenics.lastMovement');
     }
 
-
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
         $calisthenics = Calisthenic::all();
@@ -40,54 +32,31 @@ class CalisthenicsController extends Controller
         return view('calisthenics.index',compact('calisthenics','calisthenic'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function create()
     {
         return view('calisthenics.create');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(Request $request, CreateOfCalisthenics $createOfCalisthenics)
     {
-        $calisthenics = $createOfCalisthenics->createCalisthenics(
-            $request->name, $request->description,
-            $request->repetation, $request->sequency,
-            $request->difficulty, $request->muscle_group
-        );
-        $this->createCookie($calisthenics);
+        $calisthenic = $createOfCalisthenics->createCalisthenics($request);
+
+        if(!($calisthenic instanceof Calisthenic)){
+            $request->session()->flash("message",$calisthenic);
+        }
+
+        $this->createCookie($calisthenic);
 
         return redirect()->route('index');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function show($id)
     {
         //
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function edit(Request $request, Calisthenic $calisthenic)
     {
-
         if($request->difficulty != ("easy"||"medium"||"hard"||"expert")) {
             $request->session()->flash(
                 "message",
@@ -105,30 +74,18 @@ class CalisthenicsController extends Controller
 
         $calisthenic->save();
         return redirect()->route('index');
-
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  Calisthenic $calisthenic
-     * @return \Illuminate\Http\Response
-     */
     public function update(Request $request, Calisthenic $calisthenic)
     {
         return view('calisthenics.create',compact('calisthenic'));
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  Calisthenic  $calisthenic
-     * @return \Illuminate\Http\Response
-     */
     public function destroy(Calisthenic $calisthenic)
     {
         $calisthenic->delete();
         return redirect()->route('index');
     }
+
+
 }
