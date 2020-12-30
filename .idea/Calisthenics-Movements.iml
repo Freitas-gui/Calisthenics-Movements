@@ -102,6 +102,10 @@
       <excludeFolder url="file://$MODULE_DIR$/Calisthenics-Movements/vendor/symfony/polyfill-iconv" />
       <excludeFolder url="file://$MODULE_DIR$/Calisthenics-Movements/vendor/doctrine/inflector" />
       <excludeFolder url="file://$MODULE_DIR$/Calisthenics-Movements/vendor/laravel/ui" />
+      <excludeFolder url="file://$MODULE_DIR$/Calisthenics-Movements/vendor/doctrine/event-manager" />
+      <excludeFolder url="file://$MODULE_DIR$/Calisthenics-Movements/vendor/doctrine/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/Calisthenics-Movements/vendor/doctrine/dbal" />
+      <excludeFolder url="file://$MODULE_DIR$/Calisthenics-Movements/vendor/lcobucci/jwt" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

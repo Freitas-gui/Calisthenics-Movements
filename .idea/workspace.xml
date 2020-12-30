@@ -2,24 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06010448-2aee-4fa3-80d9-e38d32a22ba3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Calisthenics-Movements/app/Service/CreateOfCalisthenics.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Calisthenics-Movements/resources/views/calisthenics/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Calisthenics-Movements.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Calisthenics-Movements.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Calisthenics-Movements/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Calisthenics-Movements/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Calisthenics-Movements/app/Calisthenic.php" beforeDir="false" afterPath="$PROJECT_DIR$/Calisthenics-Movements/app/Calisthenic.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Calisthenics-Movements/app/Http/Controllers/CalisthenicsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Calisthenics-Movements/app/Http/Controllers/CalisthenicsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Calisthenics-Movements/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/Calisthenics-Movements/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Calisthenics-Movements/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Calisthenics-Movements/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Calisthenics-Movements/database/migrations/2020_12_15_203713_create_calisthenics_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Calisthenics-Movements/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Calisthenics-Movements/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Calisthenics-Movements/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/Calisthenics-Movements/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Calisthenics-Movements/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/Calisthenics-Movements/resources/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Calisthenics-Movements/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Calisthenics-Movements/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Calisthenics-Movements/app/Service/CreateOfCalisthenics.php" beforeDir="false" afterPath="$PROJECT_DIR$/Calisthenics-Movements/app/Service/CreateOfCalisthenics.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Calisthenics-Movements/resources/views/base.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Calisthenics-Movements/resources/views/base.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Calisthenics-Movements/resources/views/calisthenics/LastMovement.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Calisthenics-Movements/resources/views/calisthenics/lastMovement.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Calisthenics-Movements/resources/views/calisthenics/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Calisthenics-Movements/resources/views/calisthenics/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Calisthenics-Movements/resources/views/calisthenics/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Calisthenics-Movements/resources/views/calisthenics/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Calisthenics-Movements/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/Calisthenics-Movements/routes/api.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Calisthenics-Movements/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/Calisthenics-Movements/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Calisthenics-Movements/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/Calisthenics-Movements/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,6 +131,10 @@
       <path value="$PROJECT_DIR$/Calisthenics-Movements/vendor/symfony/polyfill-iconv" />
       <path value="$PROJECT_DIR$/Calisthenics-Movements/vendor/doctrine/inflector" />
       <path value="$PROJECT_DIR$/Calisthenics-Movements/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/Calisthenics-Movements/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/Calisthenics-Movements/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/Calisthenics-Movements/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/Calisthenics-Movements/vendor/lcobucci/jwt" />
     </include_path>
   </component>
   <component name="ProjectId" id="1lhvW885D1uRr1xBSrvQFyrW3uN" />
@@ -157,6 +154,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Freit\Desktop\Calisthenics-Movements\Calisthenics-Movements\app\Http\Controllers" />
+      <recent name="C:\Users\Freit\Desktop\Calisthenics-Movements\Calisthenics-Movements\app\Http\Controllers\Api" />
       <recent name="C:\Users\Freit\Desktop\Calisthenics-Movements\Calisthenics-Movements\app" />
       <recent name="C:\Users\Freit\Desktop\Calisthenics-Movements\Calisthenics-Movements\public\imgs" />
       <recent name="C:\Users\Freit\Desktop\Calisthenics-Movements\Calisthenics-Movements\public" />
@@ -172,7 +171,12 @@
       <updated>1608062165676</updated>
       <workItem from="1608062169267" duration="3926000" />
       <workItem from="1608234071186" duration="31408000" />
-      <workItem from="1608514105625" duration="257000" />
+      <workItem from="1608514105625" duration="13524000" />
+      <workItem from="1608642033126" duration="14437000" />
+      <workItem from="1608669705155" duration="2257000" />
+      <workItem from="1608731180866" duration="1365000" />
+      <workItem from="1608734818180" duration="453000" />
+      <workItem from="1609250066497" duration="22703000" />
     </task>
     <servers />
   </component>
