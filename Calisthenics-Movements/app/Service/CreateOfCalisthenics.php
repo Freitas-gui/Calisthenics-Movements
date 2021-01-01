@@ -14,6 +14,22 @@ class CreateOfCalisthenics{
         if(in_array($request->difficulty,$difficulty_categories)) {
             return Calisthenic::create($request->all());
         }
-        return (['difficulty_error' => 'difficulty should receiver value = easy ou medium ou hard ou expert']);
+        return ('Erro: Difficulty should receiver values = easy ou medium ou hard ou expert');
+    }
+
+    public function updateCalisthenics(Request $request, Calisthenic $calisthenic)
+    {
+        $difficulty_categories = array("easy", "medium", "hard", "expert");
+        if(in_array($request->difficulty, $difficulty_categories)) {
+            $calisthenic->name = $request->name;
+            $calisthenic->description = $request->description;
+            $calisthenic->repetation = $request->repetation;
+            $calisthenic->sequency=$request->sequency;
+            $calisthenic->difficulty=$request->difficulty;
+            $calisthenic->muscle_group=$request->muscle_group;
+
+            return $calisthenic;
+        }
+        return ('Erro: Difficulty should receiver values = easy ou medium ou hard ou expert');
     }
 }

@@ -8,10 +8,9 @@ use Illuminate\Http\Request;
 
 class CalisthenicsController extends Controller
 {
-
-    private function createCookie(Calisthenic $calisthenics)
+    public function createCookie(Calisthenic $calisthenic)
     {
-        setcookie('LastMovement', $calisthenics, time()+3600);
+        setcookie("LastMovement", $calisthenic, time()+(60*60*24));
     }
 
     public function lastCreated()
@@ -19,7 +18,7 @@ class CalisthenicsController extends Controller
         return view('calisthenics.lastMovement');
     }
 
-    public function index()
+    public function index(Request $request)
     {
         $calisthenics = Calisthenic::all();
         $calisthenic = array();
@@ -29,7 +28,10 @@ class CalisthenicsController extends Controller
             $calisthenic[$index] = $element;
             $index++;
         }
-        return view('calisthenics.index',compact('calisthenics','calisthenic'));
+
+        $message = $request->session()->get('message');
+
+        return view('calisthenics.index',compact('calisthenics','calisthenic','message'));
     }
 
     public function create()
@@ -42,10 +44,10 @@ class CalisthenicsController extends Controller
         $calisthenic = $createOfCalisthenics->createCalisthenics($request);
 
         if(!($calisthenic instanceof Calisthenic)){
-            $request->session()->flash("message",$calisthenic);
+            $request->session()->flash("message", $calisthenic);
         }
-
-        $this->createCookie($calisthenic);
+        else
+            $this->createCookie($calisthenic);
 
         return redirect()->route('index');
     }
@@ -55,9 +57,11 @@ class CalisthenicsController extends Controller
         //
     }
 
-    public function edit(Request $request, Calisthenic $calisthenic)
+    public function edit(Request $request, Calisthenic $calisthenic, CreateOfCalisthenics $updateOfCalisthenics)
     {
-        if($request->difficulty != ("easy"||"medium"||"hard"||"expert")) {
+        $calisthenic = $updateOfCalisthenics->updateCalisthenics($request, $calisthenic);
+
+        if(!($calisthenic instanceof Calisthenic)){
             $request->session()->flash(
                 "message",
                 "Error: difficulty should receiver value = easy ou medium ou hard ou expert"
@@ -65,12 +69,7 @@ class CalisthenicsController extends Controller
             return redirect()->route('index');
         }
 
-        $calisthenic->name = $request->name;
-        $calisthenic->description = $request->description;
-        $calisthenic->repetation = $request->repetation;
-        $calisthenic->sequency=$request->sequency;
-        $calisthenic->difficulty=$request->difficulty;
-        $calisthenic->muscle_group=$request->muscle_group;
+
 
         $calisthenic->save();
         return redirect()->route('index');
