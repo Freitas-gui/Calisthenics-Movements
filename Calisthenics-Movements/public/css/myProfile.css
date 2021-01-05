@@ -59,10 +59,6 @@ h6 {
     line-height: 25px
 }
 
-@media only screen and (min-width: 1400px) {
-
-}
-
 .card-block {
     padding: 1.25rem
 }
@@ -130,4 +126,16 @@ h6 {
     margin: 0 10px 0 0;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out
+}
+
+@media only screen and (max-width: 1700px) {
+
+    .f-w-600 {
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    h6 {
+        font-size: 20px
+    }
 }

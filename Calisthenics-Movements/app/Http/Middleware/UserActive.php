@@ -22,6 +22,10 @@ class UserActive
             return redirect('login');
         }
 
+        if (!Auth::user()->username) {
+            return redirect()->route('update.user');
+        }
+
         return $next($request);
     }
 }

@@ -28,6 +28,14 @@ class ConfirmPasswordController extends Controller
      */
     protected $redirectTo = RouteServiceProvider::HOME;
 
+    protected function redirectTo()
+    {
+        if (auth()->user()->role == 'user') {
+            return '/';
+        }
+        return '/';
+    }
+
     /**
      * Create a new controller instance.
      *

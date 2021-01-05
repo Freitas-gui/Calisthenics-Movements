@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Calisthenic;
+use App\Http\Requests\ValidateCalisthenicRequest;
 use App\Service\CreateOfCalisthenics;
 use App\Service\ManageCookies;
 use Illuminate\Http\Request;
@@ -39,16 +40,19 @@ class CalisthenicsController extends Controller
         return view('calisthenics.create');
     }
 
-    public function store(Request $request, CreateOfCalisthenics $createOfCalisthenics)
+    public function store(ValidateCalisthenicRequest $request, CreateOfCalisthenics $createOfCalisthenics)
     {
         $calisthenic = $createOfCalisthenics->createCalisthenics($request);
 
-        if(!($calisthenic instanceof Calisthenic))
+        if(!($calisthenic instanceof Calisthenic)){
             $request->session()->flash("message", $calisthenic);
-        else
+            return redirect()->route('create');
+        }
+        else{
             ManageCookies::createCookieLastMovement($calisthenic);
+            return redirect()->route('index');
+        }
 
-        return redirect()->route('index');
     }
 
     public function show($id)

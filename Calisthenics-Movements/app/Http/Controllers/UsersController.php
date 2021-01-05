@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 class UsersController extends Controller
@@ -35,5 +36,23 @@ class UsersController extends Controller
         Auth::user()->save();
 
         return redirect()->route('index');
+    }
+
+    public function update()
+    {
+        return view('auth.editUser');
+    }
+
+    public function edit(Request $request)
+    {
+        Auth::user()->name = $request->name;
+        Auth::user()->email = $request->email;
+        Auth::user()->phone = $request->phone;
+        Auth::user()->cpf = $request->cpf;
+        Auth::user()->birth = $request->birth;
+        Auth::user()->username = $request->username;
+
+        Auth::user()->save();
+        return redirect()->route('my.profile');
     }
 }

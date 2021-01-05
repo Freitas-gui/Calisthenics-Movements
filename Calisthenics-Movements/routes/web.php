@@ -13,11 +13,15 @@
 
 // Model User
 Auth::routes();
-Route::get('/myprofile','UsersController@myProfile')->name('my.profile');
-Route::get('/deactive','UsersController@deactive')->name('deactive');
+
+Route::get('/update','UsersController@update')->name('update.user');
+Route::put('/edit','UsersController@edit')->name('edit.user');
 
 
 Route::middleware(['auth', 'UserActive'])->group(function () {
+
+    Route::get('/myprofile','UsersController@myProfile')->name('my.profile');
+    Route::get('/deactive','UsersController@deactive')->name('deactive');
 
     // Model Calisthenic
     Route::get('/','CalisthenicsController@index')->name('index');

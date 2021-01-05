@@ -16,7 +16,7 @@
 
 
     <div class="mw-120 mh-100">
-        <div class="padding">
+        <div class="">
             <div class=" d-flex justify-content-center">
                 <div class="col-xl-10 col-md-12">
 
@@ -32,10 +32,10 @@
                                     {{--<p>Web Designer</p> <i class=" mdi mdi-square-edit-outline feather icon-edit m-t-10 f-16"></i>--}}
                                 </div>
                                 <div class="d-flex justify-content-between">
-                                    <a class="navbar-brand btn btn-outline-danger text-danger w-25 ml-3" href="{{Route("deactive")}}">
+                                    <a class="navbar-brand btn btn-outline-danger text-danger ml-3" href="{{Route("deactive")}}">
                                         Deactivate
                                     </a>
-                                    <a class="navbar-brand btn btn-outline-primary text-primary w-25 ml-3" href="{{Route("deactive")}}">
+                                    <a class="navbar-brand btn btn-outline-primary text-primary ml-3" href="{{Route('update.user')}}">
                                         Edit
                                     </a>
                                 </div>
