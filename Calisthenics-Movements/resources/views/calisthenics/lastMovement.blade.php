@@ -1,5 +1,8 @@
 @extends('base')
 
+@section('title')
+    Recently Created
+@endsection
 
 @section('subtitle')
     Here you can see the last train created
@@ -8,7 +11,6 @@
 @section('content')
 
     @if(isset($_COOKIE['LastMovement']))
-
         <div class="row">
             <div class="col col-sm-10 card-deck d-flex justify-content-between m-auto my-lg-4">
 
@@ -51,10 +53,11 @@
             </div>
         </div>
 
+    @else
+        <h2 class="text-center m-5"><span class="badge badge-secondary">No movements recorded in the last 24 hours</span></h2>
     @endif
     <div class="col  m-auto text-center">
-
-        <img class=" w-100" src="{{ asset('images/wallpaper.jpg') }}" alt="">
+        <img class=" w-100" src="{{ asset('images/wallpaper.jpg') }}" alt="Footer">
     </div>
 @endsection
 

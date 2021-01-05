@@ -27,6 +27,7 @@ class CreateOfCalisthenics{
             $calisthenic->sequency=$request->sequency;
             $calisthenic->difficulty=$request->difficulty;
             $calisthenic->muscle_group=$request->muscle_group;
+            $calisthenic->i_know=(isset($request->i_know))? 1 : 0;
 
             return $calisthenic;
         }

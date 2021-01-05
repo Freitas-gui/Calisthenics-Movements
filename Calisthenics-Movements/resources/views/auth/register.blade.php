@@ -26,6 +26,70 @@
                         </div>
 
                         <div class="form-group row">
+                            <label for="username" class="col-md-4 col-form-label text-md-right">{{ __('Username') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="username" type="text" class="form-control @error('username') is-invalid @enderror" name="username" value="{{ old('username') }}" required autocomplete="username" autofocus>
+
+                                @error('username')
+                                <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="phone" class="col-md-4 col-form-label text-md-right">{{ __('Phone') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="phone" type="text" class="form-control @error('phone') is-invalid @enderror"
+                                       name="phone" value="{{ old('phone') }}" required autocomplete="phone" autofocus
+                                       maxlength="15"
+                                >
+
+                                @error('phone')
+                                <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="cpf" class="col-md-4 col-form-label text-md-right">{{ __('CPF') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="cpf" type="text" class="form-control @error('cpf') is-invalid @enderror"
+                                       name="cpf" value="{{ old('cpf') }}" required autocomplete="cpf" autofocus
+                                       maxlength="11" minlength="11"
+                                >
+
+                                @error('cpf')
+                                <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="birth" class="col-md-4 col-form-label text-md-right">{{ __('Birth') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="birth" type="date" class="form-control @error('birth') is-invalid @enderror"
+                                       name="birth" value="{{ old('birth') }}" required autocomplete="birth" autofocus
+                                >
+
+                                @error('birth')
+                                <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
 
                             <div class="col-md-6">
@@ -74,4 +138,5 @@
         </div>
     </div>
 </div>
+
 @endsection

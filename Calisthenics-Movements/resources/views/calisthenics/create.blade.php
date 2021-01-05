@@ -1,5 +1,8 @@
 @extends('base')
 
+@section('title')
+    Create New Movement
+@endsection
 
 @section('subtitle')
     Here you can create other movement of calisthenics
@@ -73,10 +76,10 @@
             </div>
         </div>
 
-        <div class="row mt-4">
+        <div class="row mt-1">
             <div class="col col-6 m-auto d-flex justify-content-between">
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="difficulty" id="easyyy" value="easyyy"
+                    <input class="form-check-input" type="radio" name="difficulty" id="easyyy" value="error !!!!!!!!!!!!!!!!!"
                            @if(isset($calisthenic) && ($calisthenic->difficulty == "easy"))
                            checked
                         @endif
@@ -109,6 +112,21 @@
                 </div>
             </div>
         </div>
+
+        <div class="row mt-4">
+            <div class="col col-6 m-auto">
+                <label for="i_know">Mark if you know this movement:</label>
+            </div>
+        </div>
+
+        <div class="row mt-1">
+            <div class="col col-6 m-auto d-flex justify-content-between">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" name="i_know" id="i_know" value="1">
+                </div>
+            </div>
+        </div>
+
         <div class="row mt-4">
             <div class="col-6 m-auto d-flex justify-content-between">
                 <button class="btn btn-primary w-100">Save</button>
@@ -121,7 +139,6 @@
             @if(isset($calisthenics))
                 {{$calisthenics}};
             @endif
-
         }
     </script>
 @endsection

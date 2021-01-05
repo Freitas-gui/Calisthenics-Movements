@@ -11,18 +11,29 @@
 |
 */
 
-// WEB
+// Model User
 Auth::routes();
+Route::get('/myprofile','UsersController@myProfile')->name('my.profile');
+Route::get('/deactive','UsersController@deactive')->name('deactive');
 
-Route::get('/','CalisthenicsController@index')->name('index');
-Route::get('/create','CalisthenicsController@create')->name('create');
-Route::post('/create','CalisthenicsController@store')->name('store');
-Route::delete('/destroy/{calisthenic}','CalisthenicsController@destroy')->name('destroy');
-Route::put('/edit/{calisthenic}','CalisthenicsController@edit')->name('edit');
-Route::get('/update/{calisthenic}','CalisthenicsController@update')->name('update');
 
-// Cookie Test
-Route::get('/lastCreated', 'CalisthenicsController@lastCreated')->name('last.created');
+Route::middleware(['auth', 'UserActive'])->group(function () {
+
+    // Model Calisthenic
+    Route::get('/','CalisthenicsController@index')->name('index');
+    Route::get('/create','CalisthenicsController@create')->name('create');
+    Route::post('/create','CalisthenicsController@store')->name('store');
+    Route::delete('/destroy/{calisthenic}','CalisthenicsController@destroy')->name('destroy');
+    Route::put('/edit/{calisthenic}','CalisthenicsController@edit')->name('edit');
+    Route::get('/update/{calisthenic}','CalisthenicsController@update')->name('update');
+
+    // Cookie Test
+    Route::get('/lastCreated', 'CalisthenicsController@lastCreated')->name('last.created');
+
+});
+
+
+
 
 
 

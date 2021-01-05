@@ -4,17 +4,17 @@ namespace App\Http\Controllers;
 
 use App\Calisthenic;
 use App\Service\CreateOfCalisthenics;
+use App\Service\ManageCookies;
 use Illuminate\Http\Request;
 
 class CalisthenicsController extends Controller
 {
-    public function createCookie(Calisthenic $calisthenic)
-    {
-        setcookie("LastMovement", $calisthenic, time()+(60*60*24));
-    }
+
 
     public function lastCreated()
     {
+        ManageCookies::destroyCookieLastMovement();
+
         return view('calisthenics.lastMovement');
     }
 
@@ -43,11 +43,10 @@ class CalisthenicsController extends Controller
     {
         $calisthenic = $createOfCalisthenics->createCalisthenics($request);
 
-        if(!($calisthenic instanceof Calisthenic)){
+        if(!($calisthenic instanceof Calisthenic))
             $request->session()->flash("message", $calisthenic);
-        }
         else
-            $this->createCookie($calisthenic);
+            ManageCookies::createCookieLastMovement($calisthenic);
 
         return redirect()->route('index');
     }
@@ -61,17 +60,11 @@ class CalisthenicsController extends Controller
     {
         $calisthenic = $updateOfCalisthenics->updateCalisthenics($request, $calisthenic);
 
-        if(!($calisthenic instanceof Calisthenic)){
-            $request->session()->flash(
-                "message",
-                "Error: difficulty should receiver value = easy ou medium ou hard ou expert"
-            );
-            return redirect()->route('index');
-        }
+        if(!($calisthenic instanceof Calisthenic))
+            $request->session()->flash("message", $calisthenic);
+        else
+            $calisthenic->save();
 
-
-
-        $calisthenic->save();
         return redirect()->route('index');
     }
 

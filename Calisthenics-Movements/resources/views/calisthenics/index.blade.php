@@ -1,5 +1,8 @@
 @extends('base')
 
+@section('title')
+    Calisthenics Movements
+@endsection
 
 @section('subtitle')
     Here you can learn about many ways of train
@@ -29,8 +32,9 @@
                 <small class="text-muted"> Sequencys: {{$calisthenic[$count]->sequency}}</small>
             </div>
             <div class="card-footer">
+                <small class="text-muted">Difficulty Level: </small>
                 @if($calisthenic[$count]->difficulty == 'easy')
-                <small class="text-muted">Easy</small>
+                    <small class="text-muted">Easy</small>
                 @elseif($calisthenic[$count]->difficulty == 'medium')
                     <small class="text-muted">Medium</small>
                 @elseif($calisthenic[$count]->difficulty == 'hard')
@@ -41,9 +45,17 @@
             </div>
             @if(strlen ($calisthenic[$count]->muscle_group)!=0)
                 <div class="card-footer">
-                    <small class="text-muted">{{$calisthenic[$count]->muscle_group}}</small>
+                    <small class="text-muted">Muscle Group: {{$calisthenic[$count]->muscle_group}}</small>
                 </div>
             @endif
+                <div class="card-footer">
+                    @if($calisthenic[$count]->i_know == '0')
+                        <small class="text-muted">I don't know</small>
+                    @elseif($calisthenic[$count]->i_know == '1')
+                        <small class="text-muted">I know</small>
+                    @endif
+                </div>
+
                 <div class="card-footer d-flex justify-content-between">
                     <form action="{{ route('destroy', $calisthenic[$count]->id) }}" method="POST">
                         @method('DELETE')
