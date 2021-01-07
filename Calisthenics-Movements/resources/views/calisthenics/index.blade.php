@@ -1,7 +1,12 @@
 @extends('base')
 
 @section('title')
+    @if(!isset($isUserList))
+    My List Calisthenics Movements
+    @else
     Calisthenics Movements
+    @endif
+
 @endsection
 
 @section('subtitle')
@@ -62,8 +67,10 @@
                         @csrf
                         <button class="btn btn-outline-danger">Delete</button>
                     </form>
+                    @if(!isset($isUserList))
+                        <a class="btn btn-outline-secondary" href="{{ route('calisthenics.user.create', $calisthenic[$count]->id) }}">Add to my list</a>
+                    @endif
                         <a class="btn btn-outline-primary" href="{{ route('update', $calisthenic[$count]->id) }}">Edit</a>
-
                 </div>
             </div>
     @endfor

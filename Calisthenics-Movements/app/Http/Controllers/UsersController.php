@@ -9,7 +9,7 @@ class UsersController extends Controller
 {
     public function myProfile()
     {
-        $age = $this->calc_age(Auth::user()->birth);
+        $age = Auth::user()->idade;
         return view("users.myProfile", compact('age'));
     }
 
@@ -26,7 +26,6 @@ class UsersController extends Controller
             else
                 return $years-1;
              }
-
         return $years;
     }
 

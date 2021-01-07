@@ -7,6 +7,7 @@ use App\Http\Requests\ValidateCalisthenicRequest;
 use App\Service\CreateOfCalisthenics;
 use App\Service\ManageCookies;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class CalisthenicsController extends Controller
 {
@@ -21,7 +22,7 @@ class CalisthenicsController extends Controller
 
     public function index(Request $request)
     {
-        $calisthenics = Calisthenic::all();
+        $calisthenics = Calisthenic::where('user_id',null)->get();
         $calisthenic = array();
 
         $index = 0;
@@ -52,7 +53,6 @@ class CalisthenicsController extends Controller
             ManageCookies::createCookieLastMovement($calisthenic);
             return redirect()->route('index');
         }
-
     }
 
     public function show($id)

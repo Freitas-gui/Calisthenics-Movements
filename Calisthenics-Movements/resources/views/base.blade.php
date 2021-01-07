@@ -15,6 +15,7 @@
             <p class="lead font-weight-normal">@yield('subtitle')</p>
             <a class="btn btn-outline-secondary" href="{{Route("index")}}">Home</a>
             <a class="btn btn-outline-secondary" href="{{Route("create")}}">New</a>
+            <a class="btn btn-outline-secondary" href="{{Route("calisthenics.user.index")}}">My List</a>
             <a class="btn btn-outline-secondary" href="{{Route("last.created")}}">Recently created</a>
         </div>
     </div>

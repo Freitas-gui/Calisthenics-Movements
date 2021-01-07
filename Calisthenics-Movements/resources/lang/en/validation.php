@@ -133,7 +133,19 @@ return [
         'attribute-name' => [
             'rule-name' => 'custom-message',
         ],
+
+        'email' => [
+            'unique' => 'This email address has already been used.',
+        ],
+
+        'cpf' => [
+            'unique' => 'This CPF has already been used.',
+            'cpf' => 'The CPF not is valid'
+        ],
+
     ],
+
+
 
     /*
     |--------------------------------------------------------------------------

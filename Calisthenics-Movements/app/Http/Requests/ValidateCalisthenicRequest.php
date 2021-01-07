@@ -3,7 +3,6 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
-use Illuminate\Http\Request;
 
 class ValidateCalisthenicRequest extends FormRequest
 {
@@ -34,6 +33,13 @@ class ValidateCalisthenicRequest extends FormRequest
             'difficulty' =>'required|in:' . implode(',', $this->difficulty_categories),
             'muscle_group' =>'required|max:30|min:5|string',
             'i_know' =>'boolean',
+        ];
+    }
+
+    public function messages()
+    {
+        return [
+            'difficulty.in' => 'The selected difficulty previously is invalid. Please, chose other difficulty.'
         ];
     }
 

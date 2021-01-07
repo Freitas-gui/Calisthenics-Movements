@@ -10,7 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+use Illuminate\Support\Facades\Route;
 // Model User
 Auth::routes();
 
@@ -30,6 +30,10 @@ Route::middleware(['auth', 'UserActive'])->group(function () {
     Route::delete('/destroy/{calisthenic}','CalisthenicsController@destroy')->name('destroy');
     Route::put('/edit/{calisthenic}','CalisthenicsController@edit')->name('edit');
     Route::get('/update/{calisthenic}','CalisthenicsController@update')->name('update');
+
+    // MyListOfCalisthenics
+    Route::get('/calisthenics/user/add/{calisthenic}','CalisthenicsOfUserController@create')->name('calisthenics.user.create');
+    Route::get('/calisthenics/user','CalisthenicsOfUserController@index')->name('calisthenics.user.index');
 
     // Cookie Test
     Route::get('/lastCreated', 'CalisthenicsController@lastCreated')->name('last.created');
