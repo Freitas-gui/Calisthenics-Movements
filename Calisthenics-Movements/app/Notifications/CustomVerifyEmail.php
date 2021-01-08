@@ -72,7 +72,7 @@ class CustomVerifyEmail extends VerifyEmail
         $user = $this->user;
         $url = $url = $this->verificationUrl($notifiable);
         return (new MailMessage)->view(
-            'emails.order', compact('url','user')
+            'emails.verifyMessage', compact('url','user')
         );
     }
 
