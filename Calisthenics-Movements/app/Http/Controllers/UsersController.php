@@ -39,5 +39,6 @@ class UsersController extends Controller
         Auth::user()->save();
         return redirect()->route('my.profile');
     }
+
 }
 

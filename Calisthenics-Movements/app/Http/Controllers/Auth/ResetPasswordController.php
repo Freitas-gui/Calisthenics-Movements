@@ -5,6 +5,9 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\ResetsPasswords;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Password;
 
 class ResetPasswordController extends Controller
 {
@@ -35,4 +38,29 @@ class ResetPasswordController extends Controller
         }
         return '/';
     }
+
+    /**
+     * Update the password for the user.
+     *
+     * @param  Request  $request
+     * @return Response
+     */
+    public function update(Request $request)
+    {
+        // Validate the new password length...
+
+        $request->user()->fill([
+            'password' => Hash::make($request->newPassword)
+        ])->save();
+    }
+
+//    protected function guard()
+//    {
+//        return Auth::guard('guard-name');
+//    }
+//
+//    public function broker()
+//    {
+//        return Password::broker('name');
+//    }
 }

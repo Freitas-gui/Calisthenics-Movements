@@ -3,11 +3,11 @@
 namespace App\Notifications;
 
 use App\User;
+use Illuminate\Auth\Notifications\VerifyEmail;
 use Illuminate\Bus\Queueable;
 use Illuminate\Notifications\Messages\MailMessage;
-use Illuminate\Notifications\Notification;
 
-class CustomVerifyEmail extends Notification
+class CustomVerifyEmail extends VerifyEmail
 {
     use Queueable;
 
@@ -16,9 +16,9 @@ class CustomVerifyEmail extends Notification
      *
      * @return void
      */
-    public function __construct($user_id)
+    public function __construct(User $user)
     {
-        $this->user_id = $user_id;
+        $this->user = $user;
     }
 
     /**
@@ -54,17 +54,26 @@ class CustomVerifyEmail extends Notification
 //        );
 //    }
 
+//    public function toMail($notifiable)
+//    {
+////        $user_id = $this->user_id;
+////        $user = User::find($user_id);
+//        $url = $this->verificationUrl($notifiable);
+//
+//        return (new MailMessage)
+//            ->greeting('Yeees!')
+//            ->line('One of your invoices has been paid!')
+//            ->action('View Invoice', $url)
+//            ->line('Thank you for using our application!');
+//    }
+
     public function toMail($notifiable)
     {
-        $user_id = $this->user_id;
-        $user = User::find($user_id);
-        $url = url('/email/verify/'.$user->getKey().'/'.sha1($notifiable->getEmailForVerification()));
-
-        return (new MailMessage)
-            ->greeting('Yeees!')
-            ->line('One of your invoices has been paid!')
-            ->action('View Invoice', $url)
-            ->line('Thank you for using our application!');
+        $user = $this->user;
+        $url = $url = $this->verificationUrl($notifiable);
+        return (new MailMessage)->view(
+            'emails.order', compact('url','user')
+        );
     }
 
     /**
