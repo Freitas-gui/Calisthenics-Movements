@@ -106,6 +106,7 @@
       <excludeFolder url="file://$MODULE_DIR$/Calisthenics-Movements/vendor/doctrine/cache" />
       <excludeFolder url="file://$MODULE_DIR$/Calisthenics-Movements/vendor/doctrine/dbal" />
       <excludeFolder url="file://$MODULE_DIR$/Calisthenics-Movements/vendor/lcobucci/jwt" />
+      <excludeFolder url="file://$MODULE_DIR$/Calisthenics-Movements/vendor/laravellegends/pt-br-validator" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

@@ -2,12 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06010448-2aee-4fa3-80d9-e38d32a22ba3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Calisthenics-Movements/resources/views/emails/order.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Calisthenics-Movements.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Calisthenics-Movements.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Calisthenics-Movements/app/Http/Controllers/CalisthenicsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Calisthenics-Movements/app/Http/Controllers/CalisthenicsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Calisthenics-Movements/app/Service/CreateOfCalisthenics.php" beforeDir="false" afterPath="$PROJECT_DIR$/Calisthenics-Movements/app/Service/CreateOfCalisthenics.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Calisthenics-Movements/resources/views/base.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Calisthenics-Movements/resources/views/base.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Calisthenics-Movements/resources/views/calisthenics/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Calisthenics-Movements/resources/views/calisthenics/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Calisthenics-Movements/resources/views/calisthenics/lastMovement.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Calisthenics-Movements/resources/views/calisthenics/lastMovement.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Calisthenics-Movements/app/Http/Controllers/Auth/VerificationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Calisthenics-Movements/app/Http/Controllers/Auth/VerificationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Calisthenics-Movements/app/Http/Controllers/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Calisthenics-Movements/app/Http/Controllers/UsersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Calisthenics-Movements/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/Calisthenics-Movements/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Calisthenics-Movements/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/Calisthenics-Movements/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Calisthenics-Movements/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Calisthenics-Movements/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Calisthenics-Movements/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Calisthenics-Movements/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Calisthenics-Movements/resources/views/auth/verify.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Calisthenics-Movements/resources/views/auth/verify.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Calisthenics-Movements/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/Calisthenics-Movements/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,6 +136,7 @@
       <path value="$PROJECT_DIR$/Calisthenics-Movements/vendor/doctrine/cache" />
       <path value="$PROJECT_DIR$/Calisthenics-Movements/vendor/doctrine/dbal" />
       <path value="$PROJECT_DIR$/Calisthenics-Movements/vendor/lcobucci/jwt" />
+      <path value="$PROJECT_DIR$/Calisthenics-Movements/vendor/laravellegends/pt-br-validator" />
     </include_path>
   </component>
   <component name="ProjectId" id="1lhvW885D1uRr1xBSrvQFyrW3uN" />
@@ -143,17 +150,18 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Programação/Alura-courses" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Uppersoft/DesafioUppersoft/api-user-control" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.notifications" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Freit\Desktop\Calisthenics-Movements\Calisthenics-Movements\public\css" />
       <recent name="C:\Users\Freit\Desktop\Calisthenics-Movements\Calisthenics-Movements\app\Http\Controllers" />
       <recent name="C:\Users\Freit\Desktop\Calisthenics-Movements\Calisthenics-Movements\app\Http\Controllers\Api" />
       <recent name="C:\Users\Freit\Desktop\Calisthenics-Movements\Calisthenics-Movements\app" />
       <recent name="C:\Users\Freit\Desktop\Calisthenics-Movements\Calisthenics-Movements\public\imgs" />
-      <recent name="C:\Users\Freit\Desktop\Calisthenics-Movements\Calisthenics-Movements\public" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -173,7 +181,9 @@
       <workItem from="1608734818180" duration="453000" />
       <workItem from="1609250066497" duration="28868000" />
       <workItem from="1609428134813" duration="2238000" />
-      <workItem from="1609532564981" duration="2821000" />
+      <workItem from="1609532564981" duration="3551000" />
+      <workItem from="1609624305818" duration="110995000" />
+      <workItem from="1610111097488" duration="2594000" />
     </task>
     <servers />
   </component>
@@ -191,5 +201,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

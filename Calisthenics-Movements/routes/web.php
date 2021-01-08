@@ -11,14 +11,15 @@
 |
 */
 use Illuminate\Support\Facades\Route;
+
 // Model User
-Auth::routes();
+Auth::routes(['verify' => true]);
 
 Route::get('/update','UsersController@update')->name('update.user');
 Route::put('/edit','UsersController@edit')->name('edit.user');
 
 
-Route::middleware(['auth', 'UserActive'])->group(function () {
+Route::middleware(['auth', 'UserActive', 'verified'])->group(function () {
 
     Route::get('/myprofile','UsersController@myProfile')->name('my.profile');
     Route::get('/deactive','UsersController@deactive')->name('deactive');
@@ -44,5 +45,6 @@ Route::middleware(['auth', 'UserActive'])->group(function () {
 
 
 
+Auth::routes();
 
-
+Route::get('/home', 'HomeController@index')->name('home');

@@ -102,6 +102,7 @@
       <path value="$PROJECT_DIR$/Calisthenics-Movements/vendor/doctrine/cache" />
       <path value="$PROJECT_DIR$/Calisthenics-Movements/vendor/doctrine/dbal" />
       <path value="$PROJECT_DIR$/Calisthenics-Movements/vendor/lcobucci/jwt" />
+      <path value="$PROJECT_DIR$/Calisthenics-Movements/vendor/laravellegends/pt-br-validator" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.2" />
