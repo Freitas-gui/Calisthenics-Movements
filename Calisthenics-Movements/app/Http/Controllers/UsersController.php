@@ -5,10 +5,11 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Auth\RegisterController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Auth\Notifications\ResetPassword;
 
 class UsersController extends Controller
 {
-    public function myProfile()
+    public function myProfile(Request $request)
     {
         $age = Auth::user()->age;
         return view("users.myProfile", compact('age'));

@@ -36,8 +36,12 @@
                                         Deactivate
                                     </a>
                                     <a class="navbar-brand btn btn-outline-primary text-primary ml-3" href="{{Route('update.user')}}">
-                                        Edit
+                                        Edit Profile
+
                                     </a>
+{{--                                    <a class="navbar-brand btn btn-outline-secondary text-primary ml-3" href="{{route('password.reset',$token)}}">--}}
+{{--                                        Change Password--}}
+{{--                                    </a>--}}
                                 </div>
                             </div>
                             <div class="col-sm-8">
