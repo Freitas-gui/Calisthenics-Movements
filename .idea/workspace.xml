@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06010448-2aee-4fa3-80d9-e38d32a22ba3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Calisthenics-Movements/resources/views/emails/order.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Calisthenics-Movements.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Calisthenics-Movements.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Calisthenics-Movements/app/Http/Controllers/Auth/VerificationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Calisthenics-Movements/app/Http/Controllers/Auth/VerificationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Calisthenics-Movements/app/Http/Controllers/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Calisthenics-Movements/app/Http/Controllers/UsersController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Calisthenics-Movements/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/Calisthenics-Movements/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Calisthenics-Movements/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/Calisthenics-Movements/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Calisthenics-Movements/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Calisthenics-Movements/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Calisthenics-Movements/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Calisthenics-Movements/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Calisthenics-Movements/resources/views/auth/verify.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Calisthenics-Movements/resources/views/auth/verify.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Calisthenics-Movements/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/Calisthenics-Movements/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Calisthenics-Movements/.idea/Calisthenics-Movements.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Calisthenics-Movements/.idea/Calisthenics-Movements.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Calisthenics-Movements/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Calisthenics-Movements/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Calisthenics-Movements/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Calisthenics-Movements/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Calisthenics-Movements/app/Http/Controllers/CalisthenicsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Calisthenics-Movements/app/Http/Controllers/CalisthenicsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Calisthenics-Movements/resources/views/calisthenics/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Calisthenics-Movements/resources/views/calisthenics/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +144,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Uppersoft/DesafioUppersoft/api-user-control" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.notifications" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -183,7 +177,19 @@
       <workItem from="1609428134813" duration="2238000" />
       <workItem from="1609532564981" duration="3551000" />
       <workItem from="1609624305818" duration="110995000" />
-      <workItem from="1610111097488" duration="2594000" />
+      <workItem from="1610111097488" duration="8140000" />
+      <workItem from="1610119926236" duration="11673000" />
+      <workItem from="1610318488398" duration="119000" />
+      <workItem from="1610563538132" duration="933000" />
+      <workItem from="1610567800808" duration="74000" />
+      <workItem from="1610567877429" duration="80000" />
+      <workItem from="1610567976302" duration="40000" />
+      <workItem from="1610568064568" duration="15000" />
+      <workItem from="1610635665017" duration="408000" />
+      <workItem from="1610636777011" duration="3435000" />
+      <workItem from="1610804073331" duration="530000" />
+      <workItem from="1610804670858" duration="65000" />
+      <workItem from="1610804805189" duration="661000" />
     </task>
     <servers />
   </component>

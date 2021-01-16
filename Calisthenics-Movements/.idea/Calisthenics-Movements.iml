@@ -102,6 +102,12 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/doctrine/instantiator" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/polyfill-iconv" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/doctrine/inflector" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/laravel/ui" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/laravellegends/pt-br-validator" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/lcobucci/jwt" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/doctrine/event-manager" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/doctrine/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/doctrine/dbal" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

@@ -7,11 +7,9 @@ use App\Http\Requests\ValidateCalisthenicRequest;
 use App\Service\CreateOfCalisthenics;
 use App\Service\ManageCookies;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 
 class CalisthenicsController extends Controller
 {
-
 
     public function lastCreated()
     {
@@ -31,9 +29,9 @@ class CalisthenicsController extends Controller
             $index++;
         }
 
-        $message = $request->session()->get('message');
+        $message_success = $request->session()->get('message_success');
 
-        return view('calisthenics.index',compact('calisthenics','calisthenic','message'));
+        return view('calisthenics.index',compact('calisthenics','calisthenic','message_success'));
     }
 
     public function create()
@@ -46,10 +44,10 @@ class CalisthenicsController extends Controller
         $calisthenic = $createOfCalisthenics->createCalisthenics($request);
 
         if(!($calisthenic instanceof Calisthenic)){
-            $request->session()->flash("message", $calisthenic);
             return redirect()->route('create');
         }
         else{
+            $request->session()->flash("message_success", "New Calisthenics Movement Created with Success");
             ManageCookies::createCookieLastMovement($calisthenic);
             return redirect()->route('index');
         }

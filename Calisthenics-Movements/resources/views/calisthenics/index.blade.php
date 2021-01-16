@@ -15,11 +15,12 @@
 
 @section('content')
 
-    @if(!empty($message))
-        <div class="alert alert-danger m-md-3">
-            {{ $message }}
+    @if(!empty($message_success))
+        <div class="alert alert-success m-md-3">
+            {{ $message_success }}
         </div>
     @endif
+
 
     @for($count=0, $breakLine=0; $count<$calisthenics->count(); $breakLine++)
     <div class="row">
