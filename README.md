@@ -61,4 +61,4 @@ Also that, has a User with this fields:
 5) run shell: php artisan migrate
 6) run shell: php artisan serve
 
-
+<center><img src="https://user-images.githubusercontent.com/38620899/106393900-5aa85880-63d8-11eb-88f1-07ac30adad80.gif"></center>
