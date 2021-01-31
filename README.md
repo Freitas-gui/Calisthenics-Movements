@@ -54,9 +54,9 @@ Also that, has a User with this fields:
 
 ## How to run the application:
 
-1. run shell: composer install
-2. create new Schema MySql
-3. create file .env (can copy from .env.example)
-4. configure your database variables in .env
-5. run shell: php artisan migrate
-6. run shell: php artisan serve
+1) run shell: composer install
+2) create new Schema MySql
+3) create file .env (can copy from .env.example)
+4) configure your database variables in .env
+5) run shell: php artisan migrate
+6) run shell: php artisan serve
