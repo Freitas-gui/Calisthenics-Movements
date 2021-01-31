@@ -60,3 +60,7 @@ Also that, has a User with this fields:
 4) configure your database variables in .env
 5) run shell: php artisan migrate
 6) run shell: php artisan serve
+
+
+
+<center><img src="https://user-images.githubusercontent.com/38620899/106393666-3d26bf00-63d7-11eb-9ea9-59fe401a0cca.gif"></center>
