@@ -62,4 +62,12 @@ Also that, has a User with this fields:
 6) run shell: php artisan migrate
 7) run shell: php artisan serve
 
+## How to use mail service:
+
+1) create free account in mailtrap
+2) into of mailtrap site, go to My Inbox
+3) go to SMT settigns
+4) choice Laravel option in Integrations
+5) copy and past in your .env
+
 <center><img src="https://user-images.githubusercontent.com/38620899/106393900-5aa85880-63d8-11eb-88f1-07ac30adad80.gif"></center>
