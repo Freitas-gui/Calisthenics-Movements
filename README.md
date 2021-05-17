@@ -55,10 +55,19 @@ Also that, has a User with this fields:
 ## How to run the application:
 
 1) run shell: composer install
-2) create new Schema MySql
-3) create file .env (can copy from .env.example)
-4) configure your database variables in .env
-5) run shell: php artisan migrate
-6) run shell: php artisan serve
+2) run shell: php artisan key:generate
+3) create new Schema MySql
+4) create file .env (can copy from .env.example)
+5) configure your database variables in .env
+6) run shell: php artisan migrate
+7) run shell: php artisan serve
+
+## How to use mail service:
+
+1) create free account in mailtrap
+2) into of mailtrap site, go to My Inbox
+3) go to SMT settigns
+4) choice Laravel option in Integrations
+5) copy and past in your .env
 
 <center><img src="https://user-images.githubusercontent.com/38620899/106393900-5aa85880-63d8-11eb-88f1-07ac30adad80.gif"></center>
